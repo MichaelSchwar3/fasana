@@ -1,20 +1,18 @@
 import React from 'react';
-import Greeting from './greeting/greeting';
+import GreetingContainer from './greeting/greeting_container';
 import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import { Route, Link, Switch } from 'react-router-dom';
+import Modal from './modal/modal';
 
 
 const App = () => (
   <div>
+    <Modal/>
     <header>
-      <Route path='/' component={Greeting} />
+      <Route path='/' component={GreetingContainer} />
     </header>
-    <Switch>
-      <AuthRoute exact path="/login" component={LoginFormContainer} />
-      <AuthRoute exact path="/signup" component={SignupFormContainer} />
-    </Switch>
   </div>
 );
 

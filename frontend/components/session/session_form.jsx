@@ -39,34 +39,40 @@ class SessionForm extends React.Component {
   }
   render() {
     return(
-      <div className="modal-child">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          Log In
-          <br/>
-          Please {this.props.formType} or {this.props.otherForm}
-          <div onClick={this.props.closeModal} className="close-x">X</div>
-          {this.renderErrors()}
-          <div className="login-form">
-            <br/>
-            <label>E-mail:
-              <input type="email"
-                value={this.state.email}
-                onChange={this.update('email')}
-                className="login-input"
-              />
-            </label>
-            <br/>
-            <label>Password:
-              <input type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-                className="login-input"
-              />
-            </label>
-            <br/>
-            <input className="session-submit" type="submit" value={this.props.formType} />
-          </div>
-        </form>
+      <div className="login-form-container">
+        <div onClick={this.props.closeModal} className="close-x">X</div>
+        <span id="login">Log In</span>
+        <section className="login-form-subcontainer">
+          <form onSubmit={this.handleSubmit} className="login-form-box">
+            <div className="login-form">
+              <br/>
+              <label>E-mail Address<br/>
+                <input type="email"
+                  value={this.state.email}
+                  onChange={this.update('email')}
+                  className="login-input"
+                  placeholder="name@company.com"
+                />
+              </label>
+              <br/>
+              <label>Password<br/>
+                <input type="password"
+                  value={this.state.password}
+                  onChange={this.update('password')}
+                  className="login-input"
+                  placeholder="Password"
+                />
+              </label>
+              <br/>
+              <input className="session-submit" type="submit" value={this.props.formType} />
+            </div>
+          </form>
+        </section>
+        <section className="login-form-bottom-section">
+          <span id="login-form-bottom-text">Don't have an account? </span>
+          <span id="login-form-bottom-signup">{this.props.otherForm}</span>
+          <span id="login-form-errors">{this.renderErrors()}</span>
+        </section>
       </div>
     );
   }

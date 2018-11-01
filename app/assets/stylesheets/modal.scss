@@ -31,6 +31,10 @@
   color: #D8D9DB;
 }
 
+.close-x {
+  cursor: pointer;
+}
+
 
 .login-form-container {
   display: flex;
@@ -129,4 +133,13 @@
 
 #login-form-errors {
   color: red;
+}
+
+#footer-splash {
+  display: flex;
+}
+
+#footer-splash img {
+  width: 200px;
+  height:400px;
 }

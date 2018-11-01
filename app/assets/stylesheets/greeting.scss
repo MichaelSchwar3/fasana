@@ -6,6 +6,11 @@ header {
   font-weight: bold;
 }
 
+#greeting-top {
+  display: flex;
+  justify-content: space-between;
+}
+
 #logo-link{
   width: 130px;
   height: 40px;

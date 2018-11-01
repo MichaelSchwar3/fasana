@@ -69,8 +69,10 @@ class SessionForm extends React.Component {
           </form>
         </section>
         <section className="login-form-bottom-section">
-          <span id="login-form-bottom-text">Don't have an account? </span>
-          <span id="login-form-bottom-signup">{this.props.otherForm}</span>
+        <div id="other-form">
+          <span id="login-form-bottom-text">Don't have an account?</span>
+          <span id="login-form-bottom-signup">&nbsp;{this.props.otherForm}</span>
+        </div>
           <span id="login-form-errors">{this.renderErrors()}</span>
         </section>
       </div>

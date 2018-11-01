@@ -13,6 +13,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 .close-x {
@@ -36,7 +44,7 @@
 }
 
 .login-form-subcontainer {
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 18px;
 }
 
@@ -61,6 +69,10 @@
   color: black;
 }
 
+.login-form {
+  height: 560px;
+}
+
 .login-form-box label {
   display: flex;
   flex-direction: column;
@@ -69,7 +81,7 @@
 }
 
 #login {
-  font-size: 48px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -89,6 +101,18 @@
 .session-submit:hover {
   background-color: #635AC7;
   transition: background 0.5s ease-in-out;
+}
+
+.login-form-bottom-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+#other-form {
+  display: flex;
+  margin: auto;
 }
 
 #login-form-bottom-text {

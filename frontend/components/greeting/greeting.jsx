@@ -5,11 +5,11 @@ const Greeting = ({ currentUser, logout, openModal }) => {
   const sessionLinks = () => (
     <nav id="greeting">
       <section id="greeting-top">
-      <div id="logo-link"><Link to="/"><img src={window.fasanaDots}/><span id="logo-text">fasana</span></Link></div>
-      <div id="greeting-sign-in-container">
-        <button onClick={()=> openModal('login')} id="login-link">Log In</button>
-        <button onClick={()=> openModal('signup')} id="signup-button">Start Free Trial</button>
-      </div>
+        <div id="logo-link"><Link to="/"><img src={window.fasanaDots}/><span id="logo-text">fasana</span></Link></div>
+        <div id="greeting-sign-in-container">
+          <button onClick={()=> openModal('login')} id="login-link">Log In</button>
+          <button onClick={()=> openModal('signup')} id="signup-button">Start Free Trial</button>
+        </div>
       </section>
       <section className="splash-mid-section">
         <span id="splash-text-top">Make more time for the work that matters most</span>
@@ -17,6 +17,8 @@ const Greeting = ({ currentUser, logout, openModal }) => {
         <div id="start-free-trial">
           <input type="email"
             className="login-input"
+            placeholder="name@company.com"
+            id="free-trial-input"
           />
           <button onClick={()=> openModal('signup')} id="start-free-trial-button">Start Free Trial</button>
         </div>

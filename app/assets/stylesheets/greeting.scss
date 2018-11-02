@@ -48,7 +48,7 @@ header a img{
   margin-top: auto;
 }
 
-#signup-button{
+#signup-button {
   border: 2px solid #756EF2;
   color: #756EF2;
   padding-right: 15px;
@@ -56,4 +56,40 @@ header a img{
   margin-right: 5px;
   box-sizing: border-box;
   font-size: 16px;
+}
+
+#signup-button:hover {
+  background-color: #756EF2;
+  color: white;
+  transition: background 0.5s ease-in-out;
+}
+
+.splash-mid-section {
+  margin-top: 100px;
+}
+
+#start-free-trial {
+  display: flex;
+  justify-content: center;
+}
+
+#start-free-trial-button {
+  border: 2px solid #756EF2;
+  background-color: #756EF2;
+  color: white;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#start-free-trial-button:hover {
+  background-color: #635AC7;
+  transition: background 0.5s ease-in-out;
+}
+
+#free-trial-input {
+  margin-top: 0px;
 }

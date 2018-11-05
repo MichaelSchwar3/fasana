@@ -1,7 +1,4 @@
 header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
   margin-top: 5px;
   font-weight: bold;
 }
@@ -92,4 +89,36 @@ header a img{
 
 #free-trial-input {
   margin-top: 0px;
+}
+
+#splash-text {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#splash-text-top {
+  color: black;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#splash-text-bot {
+  color: black;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#footer-splash {
+  display: flex;
+  justify-content: space-between;
+  background-image: image_url('clipboard.png')
+}
+
+#footer-splash img {
+  width: 40%;
 }

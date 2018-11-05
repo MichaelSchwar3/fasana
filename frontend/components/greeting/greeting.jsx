@@ -12,8 +12,10 @@ const Greeting = ({ currentUser, logout, openModal }) => {
         </div>
       </section>
       <section className="splash-mid-section">
-        <span id="splash-text-top">Make more time for the work that matters most</span>
-        <span id="splash-text-bot">Asana is the work management platform teams use to stay focused on the goals, projects, and daily tasks that grow your business.</span>
+        <div id="splash-text">
+          <span id="splash-text-top">Make more time for the work that matters most</span>
+          <span id="splash-text-bot">Asana is the work management platform teams use to stay focused on the goals, projects, and daily tasks that grow your business.</span>
+        </div>
         <div id="start-free-trial">
           <input type="email"
             className="login-input"
@@ -24,6 +26,8 @@ const Greeting = ({ currentUser, logout, openModal }) => {
         </div>
       </section>
       <footer id="footer-splash">
+        <img src={window.female}/>
+        <img src={window.male}/>
       </footer>
     </nav>
   );
